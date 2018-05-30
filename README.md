@@ -21,18 +21,19 @@ This application should expose two API endpoints.
     * Accepts an email address
     * Removes that email from the daily subscription
 
-#### Deliverables:
+#### Deliverables
 
 Put all of your relevant code and documentation in a git repository. We prefer GitHub, but as long as it is web accessible, you can put it up wherever you have an account.
 
 How you organize your project and generate CloudFormation is up to you. All we ask is that you include the final CloudFormation template in a `cloudformation.yaml` file at the root of your project.
 
-#### Notes:
+#### Notes
   * You should be able to stay in the AWS "Free Tier" for this project.
+  * We expect a minimal project to take 2-5 hours of your time, depending on your familiarity with AWS.
   * While AWS SES would provide prettier email formatting, it is not free. You may use AWS SNS topics with an email endpoint.
 
 #### Bonus Points
-If you have time and really want to impress us, here are a few things we would enjoy seeing.
+If you have extra time and really want to impress us, here are a few things we would enjoy seeing.
 
   * Add tests and CI via CodeBuild
   * Add CodePipeline to auto-deploy your CloudFormation template
