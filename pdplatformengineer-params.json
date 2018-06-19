@@ -1,0 +1,15 @@
+[
+   {
+      "ParameterKey": "AccountId",
+      "ParameterValue": "157636163245"
+   },
+   {
+      "ParameterKey": "Region",
+      "ParameterValue": "us-east-2"
+   },
+   {
+      "ParameterKey": "SNSTopicName",
+      "ParameterValue": "NewsLetterSubscriptionsTopic"
+   }
+
+]
