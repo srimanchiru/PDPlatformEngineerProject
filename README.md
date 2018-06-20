@@ -1,3 +1,8 @@
+Step1: Create the Cloudformation Stack using AWS CLI and use the input CFT template PDPlatformEngineerProject/pdplatformengineer.yaml
+Step2: Copy the PDPlatformEngineerProject/NewsletterUI/ code into S3 bucket
+
+TEST URL: http://newletter-subscription-app.s3-website.us-east-2.amazonaws.com/
+
 ## Product Development Platform Engineer Project
 
 This project is meant to demonstrate several of the skills we are looking for in the product development platform team. Some requirements are left intentionally vague so that we can see your architecting and problem solving skills, and to allow you some creative freedom. That being said, do not hesitate to ask us questions about the project.
