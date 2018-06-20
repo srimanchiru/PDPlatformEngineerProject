@@ -5,15 +5,9 @@ Description:
   Creates the Lambda functions, DynamoDB table, and API Gateway endpoints for the web application workshop
 
 Parameters:
-      AccountId:
-         Description: "Name of the AccountId to use"
-         Type: "String"
 
-      Region:
-         Description: "Region Name To Use"
-         Type: "String"
-      SNSTopicName:
-         Description: "SNS Topic Name To Use"
+      SNSTopicArn:
+         Description: "SNS Topic Arn To Use"
          Type: "String"
        
 Resources:
@@ -147,7 +141,7 @@ Resources:
                     
                     var params = {
                       Protocol: 'email', 
-                      TopicArn: 'arn:aws:sns:${AWS:Region}:${AWS::AccountId}:${AWS:SNSTopicName}',
+                      TopicArn: !Ref AWS::SNSTopicArn,
                       Endpoint: email
                     };
 
@@ -229,7 +223,7 @@ Resources:
               };
 
               var unsubscribe_params = {
-                TopicArn: 'arn:aws:sns:${AWS:Region}:${AWS::AccountId}:${AWS:SNSTopicName}', 
+                TopicArn: !Ref AWS::SNSTopicArn 
               };
               
               sns.listSubscriptionsByTopic(unsubscribe_params, function(err, data) {
@@ -394,7 +388,7 @@ Resources:
                     sns.publish({
                         Message: messageBody,
                         Subject: "Chuck Norris Jokes!!",
-                        TopicArn: "arn:aws:sns:${AWS:Region}:${AWS::AccountId}:${AWS:SNSTopicName}"
+                        TopicArn: !Ref AWS::SNSTopicArn
                         
                     }, done);
                   
