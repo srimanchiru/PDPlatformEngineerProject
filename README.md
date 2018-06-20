@@ -1,7 +1,7 @@
-Step1: Create the Cloudformation Stack using AWS CLI and use the input CFT template PDPlatformEngineerProject/pdplatformengineer.yaml
+Step1: Create the Cloudformation Stack using AWS CLI and use the input CF template PDPlatformEngineerProject/pdplatformengineer.yaml
 
 
-Step2: Copy the PDPlatformEngineerProject/NewsletterUI/ code into S3 bucket
+Step2: Copy the PDPlatformEngineerProject/NewsletterUI/ code into Created S3 bucket from above CFT
 
 TEST URL: http://newletter-subscription-app.s3-website.us-east-2.amazonaws.com/
 
