@@ -1,7 +1,0 @@
-[
-   {
-      "ParameterKey": "SNSTopicArn",
-      "ParameterValue": "arn:aws:sns:us-east-2:157636163245:NewsLetterSubscriptionsTopic"
-   }
-
-]
