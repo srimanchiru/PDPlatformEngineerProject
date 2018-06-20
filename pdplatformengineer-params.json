@@ -1,15 +1,7 @@
 [
    {
-      "ParameterKey": "AccountId",
-      "ParameterValue": "157636163245"
-   },
-   {
-      "ParameterKey": "Region",
-      "ParameterValue": "us-east-2"
-   },
-   {
-      "ParameterKey": "SNSTopicName",
-      "ParameterValue": "NewsLetterSubscriptionsTopic"
+      "ParameterKey": "SNSTopicArn",
+      "ParameterValue": "arn:aws:sns:us-east-2:157636163245:NewsLetterSubscriptionsTopic"
    }
 
 ]
