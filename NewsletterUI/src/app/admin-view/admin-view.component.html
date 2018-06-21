@@ -1,0 +1,19 @@
+<div>
+  <h1>Welcome NewsLetter Admin!</h1>
+  <button (click)="getAllSubscriptions()">Fetch all Subscriptions</button>
+  <h1 *ngIf="statusMessage.length > 0">{{statusMessage}}</h1>
+</div>
+<div *ngIf="newsLetterSubscriptions.length > 0" style="padding-top: 10px">
+  <table>
+    <thead>
+    <th>Email</th>
+    <th>Status</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let sub of newsLetterSubscriptions">
+      <td>{{sub.email}}</td>
+      <td>{{sub.subscriptionStatus}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

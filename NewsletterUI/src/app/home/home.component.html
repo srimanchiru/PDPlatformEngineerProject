@@ -1,0 +1,13 @@
+<h1>Welcome to NewsLetter!!</h1>
+
+<div>
+  <label>Email:
+    <input type="email" [(ngModel)]="email" (ngModelChange)="onChange()" placeholder="Email" style="width: 220px;">
+  </label>
+</div>
+<br />
+<button (click)="onSubmit()">Subscribe!</button>
+<button (click)="onUnSubScribe()">UnSubscribe!</button>
+
+<h1 *ngIf="showErrorResponse" style="color: red;">{{showMessage}}</h1>
+<h1 *ngIf="!showErrorResponse" style="color: green;">{{showMessage}}</h1>
