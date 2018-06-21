@@ -1,7 +1,9 @@
 Step1: Create the Cloudformation Stack using AWS CLI and use the input CF template PDPlatformEngineerProject/pdplatformengineer.yaml
 
+Step2: Build the Angularjs UI application
+       C:\Users\nscorp\Desktop\AWS project\newsletter-app>ng build --prod
 
-Step2: Copy the PDPlatformEngineerProject/NewsletterUI/ code into Created S3 bucket from above CFT
+Step3: Copy the PDPlatformEngineerProject/NewsletterUI/dist/* code into Created S3 bucket from above Step1 CFT
 
 TEST URL: http://newletter-subscription-app.s3-website.us-east-2.amazonaws.com/
 
