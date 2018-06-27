@@ -15,7 +15,7 @@ const RESPONSE = {
 exports.handler = (event, context, callback) => {
     
   var unsubscribe_params = {
-    TopicArn: 'arn:aws:sns:us-east-2:157636163245:dynamodb', /* required */
+    TopicArn: 'arn:aws:sns:us-east-2:123456789:dynamodb', /* required */
   };
   
   var result = [];
