@@ -92,7 +92,7 @@ var req = https.request(options, function(res) {
         sns.publish({
             Message: messageBody,
             Subject: "Chuck Norris Jokes!!",
-            TopicArn: "arn:aws:sns:us-east-2:157636163245:dynamodb"
+            TopicArn: "arn:aws:sns:us-east-2:123456789:dynamodb"
             
         }, done);
       
